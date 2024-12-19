@@ -23,7 +23,6 @@ int main()
         zeroCount = 0;
         cin >> n >> m >> k;
         char *input = new char[n];
-
         for (int i = 0; i < n; i++)
         {
             cin >> input[i];
