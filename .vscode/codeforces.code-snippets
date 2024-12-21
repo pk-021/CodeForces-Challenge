@@ -1,0 +1,39 @@
+{
+	"Template for Code with Test Cases and Dynamic Array": {
+	  "scope": "cpp",
+	  "prefix": "codeforces",
+	  "body": [
+		"#include <iostream>",
+		"",
+		"using namespace std;",
+		"",
+		"int main() {",
+		"    int nTests;",
+		"    int nVals;",
+		"    int k;",
+		"    cin >> nTests;",
+		"",
+		"    while (nTests--) {",
+		"        cin >> nVals;",
+		"        cin >> k;$0",
+		"",
+		"        int *vals = new int[nVals]();",
+		"        for (int i = 0; i < nVals; i++) {",
+		"            cin >> vals[i];",
+		"        }",
+		"",
+		"        for (int i = 0; i < nVals; i++) {",
+		"            cout << vals[i] << \" \";",
+		"        }",
+		"        cout << endl;",
+		"",
+		"        delete[] vals; // Free dynamically allocated memory",
+		"    }",
+		"",
+		"    return 0;",
+		"}"
+	  ],
+	  "description": "Code template for handling multiple test cases with dynamic array allocation."
+	}
+  }
+  
